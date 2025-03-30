@@ -1,0 +1,13 @@
+<span
+  class="text-danger"
+  [class]="mostrarErros() ? 'visible' : 'invisible'"
+  matTooltip="{{ mostrarMensagens() }}"
+  matTooltipPosition="after"
+>
+  @if (mostrarErros()) {
+    {{mostrarMensagens()}}
+  } 
+  @else{
+    vazio
+  }
+</span>
